@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale:1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ToDoList</title>
+    <link rel="stylesheet" type="text/css" href="../css/GameCss.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body id="body" onkeydown="changeDirection(event)" onload="getLoad()" onbeforeunload="saveLoad()">
+<div class="container-fluid">
+    <div class="row">
+        <div id="nav1" class="col-md-6 col-sm-12 col-xs-12">
+            <div class="col-md-2 col-md-offset-1 hidden-sm hidden-xs">
+                <a class="navText" id="navTodolist" onmouseout="turnOff('navTodolist')" onmouseover="turnOn('navTodolist')" >Todolist</a>
+            </div>
+            <form id="navForm" class="col-md-8 col-md-offset-1 col-sm-12" action="javascript:addNode()" role="form">
+                <input type="text" id="navInput" class="form-control" placeholder="add todo" autocomplete="off">
+            </form>
+        </div>
+        <div id="nav2" class="col-md-6 col-sm-12 col-xs-12">
+            <a href="https://pomotodo.com/apps" target="_blank" class="navText col-md-offset-5 col-md-2 col-sm-4 col-xs-4" id="navGame" onmouseout="turnOff('navGame')" onmouseover="turnOn('navGame')">game</a>
+            <a href="http://fm.baidu.com/#" target="_blank" class="navText col-md-2  col-sm-4 col-xs-4" id="navMusic" onmouseout="turnOff('navMusic')" onmouseover="turnOn('navMusic')" >music</a>
+            <a href="https://pomotodo.com/apps" target="_blank" class="navText col-md-3 col-sm-4 col-xs-4" id="navDownload" onmouseout="turnOff('navDownload')" onmouseover="turnOn('navDownload')">download</a>
+
+        </div>
+    </div>
+
+    <div id="content" class="row">
+        <div id="contentRight" class="col-md-5">
+            <div id="game" onclick="snakeMove()">
+            </div>
+        </div>
+    </div>
+    <span class="row" style="visibility: hidden">copyRight @ yueling    version: 1.0  date:2016.3.8</span>
+</div>
+<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/GameJs.js"></script>
+</body>
+</html>

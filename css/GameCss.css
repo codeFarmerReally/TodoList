@@ -1,0 +1,128 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+#nav1
+{
+    background-color:#222222;
+    height: 53px;
+}
+#nav2
+{
+    background-color:#222222;
+    height: 53px;
+}
+.navText
+{
+    text-decoration: none;
+    color: #CDCDCD;
+    position: relative;
+    cursor: pointer;
+}
+#navTodolist
+{
+    font-size: 185%;
+    text-decoration: none;
+    top: 10px;
+}
+#navForm
+{
+    height: auto;
+    position: relative;
+    top: 11px;
+}
+#navInput
+{
+    border-radius: 5px;
+    height: 29px;
+}
+#navMusic
+{
+    font-size: 150%;
+    text-decoration: none;
+    top: 10px;
+    text-align: center;
+}
+#navDownload
+{
+    font-size: 150%;
+    text-decoration: none;
+    top: 10px;
+    text-align: center;
+}
+#navGame
+{
+    font-size: 150%;
+    text-decoration: none;
+    top: 10px;
+    text-align: center;
+}
+
+#content
+{
+    background-color: #CDCDCD;
+    min-height: 580px;
+}
+
+#contentRight
+{
+    height: 400px;
+}
+#game
+{
+    position: relative;
+    top: 60px;
+    background-color: white;
+    width: 288px;
+    height: 288px;
+}
+.snakeNode
+{
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    margin-right:1px;
+    margin-top: 1px;
+    visibility: hidden;
+}
+
+li
+{
+    height:32px;
+    line-height: 4px;
+    background: #fff;
+    margin-bottom: 10px;
+    padding:0 15px;
+    border-radius:3px;
+    border-left: 5px solid #629A9C;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    list-style: none;
+}
+li input
+{
+    float: left;
+    position: relative;
+    top: 7px;
+}
+li div
+{
+    float: left;
+    position: relative;
+    width: 90%;
+    height: 30px;
+    left:9px;
+    bottom: 2px;
+    overflow: hidden;
+}
+li a
+{
+    float: left;
+    position:relative;
+    left: 5%;
+    top: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
